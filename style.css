@@ -36,7 +36,7 @@ body {
     height: 65%;
     display: grid;
     grid-template-columns: repeat(4,25%);
-    justify-items; center;
+    justify-items: center;
     align-items: center;
 }
 
