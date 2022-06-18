@@ -68,6 +68,7 @@ function updateDisplay(btn) {
         }
     }
     if (btn.classList.contains('clear')) {
+        currentOperator.classList.remove('activated');
         x = y = currentOperator = undefined;
         operatorCalled = midEquation = false;
         display.textContent = '0';
