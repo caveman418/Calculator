@@ -1,6 +1,7 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
+    user-select: none;
 }
 
 body {
@@ -54,13 +55,24 @@ button {
     color: white;
     font-size: 5vh;
     border: none;
+
+    transition: 0.4s;
 }
 
 .divide, .multiply, .subtract, .add, .equals {
-    background-color: orange;
+    background-color: rgb(35, 127, 107);
 }
 
 .clear, .plusminus {
     background-color: gainsboro;
     color: black;
+}
+
+button:hover, .activated {
+    filter: brightness(150%);
+    transition-timing-function: ease-out;
+}
+
+.activated {
+    filter: brightness(200%);
 }
