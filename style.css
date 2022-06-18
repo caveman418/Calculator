@@ -59,8 +59,8 @@ button {
     transition: 0.4s;
 }
 
-.divide, .multiply, .subtract, .add, .equals {
-    background-color: rgb(35, 127, 107);
+.operator, .equals {
+    background-color: rgb(72, 125, 222);
 }
 
 .clear, .plusminus {
