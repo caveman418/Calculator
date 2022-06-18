@@ -16,7 +16,7 @@ buttons.forEach(btn => btn.addEventListener('click', e => updateDisplay(e.target
 
 window.addEventListener('keydown', e => {
     let btn = document.getElementById(e.key); //gets button with matching id
-    updateDisplay(btn); //updateDisplay function requires the button's DOM element as the input
+    if (btn) updateDisplay(btn); //updateDisplay function requires the button's DOM element as the input (if btn isn't null)
 });
 
 function calc() {
